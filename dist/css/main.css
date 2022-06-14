@@ -29,22 +29,27 @@ body {
 
 .search ::-webkit-input-placeholder {
   font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 .search :-ms-input-placeholder {
   font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 .search ::-ms-input-placeholder {
   font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 .search ::placeholder {
   font-size: 1rem;
+  font-family: "PT Sans", sans-serif;
 }
 
 .search button {
   font-size: 2rem;
+  font-family: "PT Sans", sans-serif;
   padding: 20px;
   margin-left: 16px;
   border-radius: 4px;
@@ -55,5 +60,24 @@ body {
 
 .search :hover {
   background-color: #EBEBEB;
+}
+
+.results {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: gray;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  height: 60vh;
 }
 /*# sourceMappingURL=main.css.map */

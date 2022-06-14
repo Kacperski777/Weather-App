@@ -7,6 +7,7 @@ $width: 100%;
 $border-radius: 15px; 
 $font-size-large: 2rem;
 $font-size-small: 1rem;
+$font:'PT Sans' , sans-serif;
 
 
 
@@ -21,7 +22,7 @@ body{
     margin: $margin;
     margin-top: $margin * 5;
     padding: $padding;
-
+    
     input{
         padding: $padding;
         margin-right: $margin;
@@ -36,10 +37,12 @@ body{
 
     ::placeholder{
         font-size: $font-size-small;
+        font-family: $font;
     }
 
     button{
         font-size: $font-size-large;
+        font-family: $font;
         padding: $padding * 1;
         margin-left: $margin;
         border-radius: $border-radius - 11;
@@ -51,4 +54,18 @@ body{
     :hover{
         background-color: #EBEBEB;
     }
+}
+
+
+.results{
+    border-radius: 15px;
+    border-style: solid;
+    border-color: gray;
+    background-color: white;
+    display: $flex;
+    justify-content: $center;
+    align-items: $center;
+    margin: 0 auto;
+    width: $width / 2;
+    height: 60vh;
 }
