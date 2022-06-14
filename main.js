@@ -1,3 +1,8 @@
+
+let backgro = document.getElementById("div-2")
+
+
+
 function city(){
     let city = document.getElementById("city").value
     weatherBalloon(city)
@@ -21,8 +26,9 @@ function weatherBalloon( cityID ) {
       document.getElementById("weather_low").innerHTML = "Min Temp Today: " + celcius_min + '&deg';
       document.getElementById("weather_high").innerHTML = "Max Temp Today: " + celcius_max + '&deg';
       document.getElementById("location").innerHTML = data.name;
+      
       //document.getElementById("")
-
+        background(data.weather[0].main);
 
     })
     .catch(function() {
@@ -37,4 +43,29 @@ function weatherBalloon( cityID ) {
   
  
   
- 
+ function background(data){
+    console.log(data)
+    switch(data){
+        case 'Clear':
+            backgro.style.backgroundImage =  'url("/img/clear.jpg")';
+            break;
+            case 'Clouds':
+                backgro.style.backgroundImage =  'url("/img/clouds.jpeg")';
+                break;
+                case 'Drizzle':
+                    backgro.style.backgroundImage =  'url("/img/drizzler.jpg")';
+                    break;
+                    case 'Snow':
+                        backgro.style.backgroundImage =  'url("/img/rain.jpg")';
+                        break;
+                        case 'Rain':
+                            backgro.style.backgroundImage =  'url("/img/snow.jpg")';
+                            break;
+                            case 'Thunderstorm':
+                                backgro.style.backgroundImage =  'url("/img/thunderstorm.jpg")';
+                                break;
+        default:
+            "error"
+    }
+
+ }

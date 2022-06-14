@@ -1,6 +1,8 @@
-body {
-  background-color: #A1A6B4;
+.images {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("/img/weather.gif");
 }
 
 .main-container {

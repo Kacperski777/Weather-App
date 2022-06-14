@@ -11,12 +11,11 @@ $font:'PT Sans' , sans-serif;
 
 
 
-body{
-    background-color: $main-color;
-    
-
-    background-size: cover;
-
+.images{
+    background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    background-image: url('/img/weather.gif');
 }
 
 
