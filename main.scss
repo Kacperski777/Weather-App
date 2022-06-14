@@ -1,10 +1,19 @@
 $flex: flex;
 $center : center;
+$main-color: #A1A6B4;
 $margin: 16px;
 $padding: 20px;
 $width: 100%;
+$border-radius: 15px; 
 $font-size-large: 2rem;
 $font-size-small: 1rem;
+
+
+
+body{
+    background-color: $main-color;
+}
+
 
 .search{
     display:  $flex;
@@ -17,11 +26,29 @@ $font-size-small: 1rem;
         padding: $padding;
         margin-right: $margin;
         width: $width / 4;
+        border-radius: $border-radius;
+       border-color: transparent;
+       border-style: none;
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    }
+
+    ::placeholder{
+        font-size: $font-size-small;
     }
 
     button{
         font-size: $font-size-large;
         padding: $padding * 1;
         margin-left: $margin;
+        border-radius: $border-radius - 11;
+        cursor: pointer;
+        border-color: transparent;
+        font-size: $font-size-small;
+    }
+
+    :hover{
+        background-color: #EBEBEB;
     }
 }
