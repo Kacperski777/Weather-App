@@ -1,0 +1,27 @@
+$flex: flex;
+$center : center;
+$margin: 16px;
+$padding: 20px;
+$width: 100%;
+$font-size-large: 2rem;
+$font-size-small: 1rem;
+
+.search{
+    display:  $flex;
+    justify-content: $center;
+    margin: $margin;
+    margin-top: $margin * 5;
+    padding: $padding;
+
+    input{
+        padding: $padding;
+        margin-right: $margin;
+        width: $width / 4;
+    }
+
+    button{
+        font-size: $font-size-large;
+        padding: $padding * 1;
+        margin-left: $margin;
+    }
+}
