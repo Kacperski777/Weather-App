@@ -14,10 +14,9 @@ $font:'PT Sans' , sans-serif;
 body{
     background-color: $main-color;
     
-    background-image: url("/img/rain.jpg");
+
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
 }
 
 
@@ -26,20 +25,54 @@ body{
   }
 
 .left{
-    background-color: $main-color;
+    margin:0;
+	padding:0;
+	font-family:"arial",heletica,sans-serif;
+	font-size:12px;
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+	-webkit-animation: 10s linear 0s normal none infinite animate;
+	-moz-animation: 10s linear 0s normal none infinite animate;
+	-ms-animation: 10s linear 0s normal none infinite animate;
+	-o-animation: 10s linear 0s normal none infinite animate;
+	animation: 10s linear 0s normal none infinite animate;
+}
+
+@-webkit-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-moz-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-ms-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@-o-keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
+}
+ 
+@keyframes animate {
+	from {background-position:0 0;}
+	to {background-position: 500px 0;}
 }
 
 .search{
     display:  $flex;
-    justify-content: left;
+    justify-content: center;
     margin: $margin;
-    margin-top: $margin * 5;
+    margin-top: $margin * 3;
     padding: $padding;
     
     input{
         padding: $padding;
         margin-right: $margin;
-        width: $width / 4;
+        width: $width / 2;
         border-radius: $border-radius;
        border-color: transparent;
        border-style: none;
@@ -73,14 +106,13 @@ body{
 .results{
     border-radius: 15px;
     border-style: solid;
+    color: white;
     border-color: transparent;
- 
-
-    text-align: left;
-    margin: 0 auto;
-    padding: $padding * 2;
+    padding-right: $padding * 5;
+    padding: $padding * 1.2;
+    text-align: center;
     font-family: $font;
-    font-size: $font-size-large * 1.3;
+    font-size: 3.8vh;
     width: $width / 1;
     line-height: 3.5;
 
@@ -88,3 +120,8 @@ body{
 
   
 }
+
+
+
+
+
